@@ -2,9 +2,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "UMShareSDK"
-  s.version      = "0.0.1"
-  s.summary      = "UMCShare 组件"
-  s.description  = "基于友盟社会化分享组件,包含精简版QQ SDK、精简版微博SDK、完整版带支付功能的微信SDK"
+  s.version      = "1.0.0"
+  s.summary      = "UMCShare分享组件"
+  s.description  = "基于友盟社会化分享组件,包含精简版QQ SDK、精简版微博SDK、完整微信SDK(带微信支付功能)"
   s.homepage     = "https://github.com/duxinfeng/UMShareSDK"
   s.license      = "MIT"
   s.author       = { "Xinfeng Du" => "duxinfeng99@gmail.com" }
@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Social' do |ss|
-  
     ss.dependency 'UMShareSDK/UMShare'
 
     ss.subspec 'ReducedQQ' do |sss|
@@ -53,5 +52,7 @@ Pod::Spec.new do |s|
       sss.libraries = 'sqlite3','c++','z'
       sss.dependency "UMShareSDK/Social/ReducedWeChat"
     end
+
   end
+
 end
