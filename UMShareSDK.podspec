@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UMShareSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UMCShare分享组件"
   s.description  = "基于友盟社会化分享组件,包含精简版QQ SDK、精简版微博SDK、完整微信SDK(带微信支付功能)"
   s.homepage     = "https://github.com/duxinfeng/UMShareSDK"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/duxinfeng/UMShareSDK.git", :tag => "#{s.version}" }
   s.requires_arc = true
-  s.dependency "UMCCommon", "~> 1.5.3"
+  s.dependency "UMCCommon", "~> 2.1.4"
  
   s.subspec 'UMShare' do |ss|
     ss.vendored_frameworks = 'UMShare/UMShare.framework'
